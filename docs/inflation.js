@@ -13,8 +13,6 @@
     var Inflation = window.Inflation || {};
 
     Inflation = (function(){
-        var fnidx = 0;
-
         function inflation(element, settings){
             var _ = this;
 
@@ -34,7 +32,7 @@
 
             _.$inflation = $(element);
 
-            _.init(true);
+            _.init();
         }
 
         return inflation;
@@ -73,7 +71,7 @@
         }, _.options.delay);
     }
 
-    $.fn.inflation = function(){
+    $.fn.inflation = function() {
         var _ = this,
             o = arguments[0],
             s = Array.prototype.slice.call(arguments, 1),
