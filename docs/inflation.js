@@ -71,7 +71,7 @@
         }, _.options.delay);
     }
 
-    $.fn.inflation = function() {
+    $.fn.inflation = function () {
         var _ = this,
             o = arguments[0],
             s = Array.prototype.slice.call(arguments, 1),
